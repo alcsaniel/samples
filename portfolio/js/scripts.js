@@ -7,9 +7,20 @@
     (function($) {
     "use strict"; // Start of use strict
   
+    /**
+   * Easy selector helper function
+   */
+  const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+      return [...document.querySelectorAll(el)]
+    } else {
+      return document.querySelector(el)
+    }
+  }
 
     /**
-   * Hero type effect
+   *  type effect
    */
   const typed = document.querySelector(".typed");
 
@@ -23,8 +34,27 @@
       backSpeed: 50,
       backDelay: 2000
     });
-  }
   
+  /**
+   * Skills animation
+   */
+  const skillsContent = document.querySelector(".skills-content");
+
+   if (skillsContent) {
+     new Waypoint({
+       element: skillsContent,
+       offset: '80%',
+       handler: function(_direction) {
+        let progress = select('.progress .progress-bar', true);
+         progress.forEach((el) => {
+           el.style.width = el.getAttribute('aria-valuenow') + '%'
+         });
+       }
+     })
+   } 
+
+  }
+ 
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

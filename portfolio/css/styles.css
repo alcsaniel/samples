@@ -72,10 +72,10 @@ body {
   background-color: #fff;
   /*  f12 dw disabled  */
   -webkit-touch-callout: none; /* iOS Safari */
- -webkit-user-select: none; /* Safari */
- -khtml-user-select: none; /* Konqueror HTML */
- -moz-user-select: none; /* Firefox */
- -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
 }
 
@@ -2211,10 +2211,6 @@ textarea.form-control {
   height: auto;
 }
 
-.form-group {
-  margin-bottom: 1rem;
-}
-
 .form-text {
   display: block;
   margin-top: 0.25rem;
@@ -2518,7 +2514,7 @@ textarea.form-control.is-invalid {
     justify-content: center;
     margin-bottom: 0;
   }
-  .form-inline .form-group {
+  .form-inline {
     display: flex;
     flex: 0 0 auto;
     flex-flow: row wrap;
@@ -5656,11 +5652,11 @@ a.badge-dark.focus {
 }
 
 .close {
+  display: none;
   float: right;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
 }
@@ -6470,11 +6466,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-image: linear-gradient(
-    to right,
-    #d7d2cc 0%,
-    #304352 100%
-  ) !important;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
 }
 a.bg-primary:hover,
 a.bg-primary:focus,
@@ -6484,11 +6476,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-image: linear-gradient(
-    to right,
-    #d7d2cc 0%,
-    #304352 100%
-  ) !important;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
 }
 
 a.bg-secondary:hover,
@@ -10549,7 +10537,7 @@ a.text-dark:focus {
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
-  color: #a8caba;
+  color: #00e3ae;
   font-family: "DotGothic16", sans-serif;
 }
 .masthead .masthead-avatar {
@@ -10573,8 +10561,6 @@ a.text-dark:focus {
   .masthead .masthead-subheading span {
     font-size: 3.9rem;
     margin-bottom: 3.9%;
-    color: #a8caba;
-    font-family: "DotGothic16", sans-serif;
   }
   .portfolio .portfolio-item {
     cursor: pointer;
@@ -10623,64 +10609,86 @@ a.text-dark:focus {
     opacity: 1;
   }
 
-  .floating-label-form-group {
-    position: relative;
-    border-bottom: 1px solid #e9ecef;
-  }
-  .floating-label-form-group input,
-  .floating-label-form-group textarea {
-    font-size: 1.5em;
-    position: relative;
-    z-index: 1;
-    padding-right: 0;
-    padding-left: 0;
-    resize: none;
-    border: none;
-    border-radius: 0;
-    background: none;
-    box-shadow: none !important;
-  }
-  .floating-label-form-group label {
-    font-size: 0.85em;
-    line-height: 1.764705882em;
-    position: relative;
-    z-index: 0;
-    top: 2em;
-    display: block;
-    margin: 0;
-    transition: top 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-  }
-  .floating-label-form-group:not(:first-child) {
-    padding-left: 14px;
-    border-left: 1px solid #e9ecef;
-  }
-
-  .floating-label-form-group-with-value label {
-    top: 0;
-    opacity: 1;
-  }
-
-  .floating-label-form-group-with-focus label {
-    color: #1a252f;
-  }
-
-  form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #e9ecef;
-  }
-
   .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-image: linear-gradient(
-      to right,
-      #d7d2cc 0%,
-      #304352 100%
-    ) !important;
-    color: #fff;
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
   }
 
   .copyright {
     background-color: #1a252f;
   }
+}
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #fff;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #00e3ae;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service-box {
+  background-color: #fff;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+}
+
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
 }

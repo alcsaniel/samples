@@ -17,9 +17,23 @@
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">    
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">  
+        <!-- vendorcsss -->
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
+        <!-- Disable F12, right click -->
+        <script>
+            window.oncontextmenu = function () {
+				return false;
+			}
+                document.onkeydown = function (event) {
+                    event = (event || window.event);
+                    if (event.keyCode == 123) {
+                        //alert('No F-keys');
+                        return false;
+                    }
+                }
+        </script>	
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -34,7 +48,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Samples</a></li>    
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Services</a></li>
                         
                     </ul>
                 </div>
@@ -61,7 +75,7 @@
                     
                 </div>
                 <!-- Masthead Subheading-->             
-                <p class="masthead-subheading font-weight-light mb-0">  <span class="typed" data-typed-items=" Front End Developer, WordPress Developer, Web UI/UX Designer, Freelancer"></span></p>
+                <p class="masthead-subheading font-weight-light mb-0">  <span class="typed" data-typed-items=" Front-End Web Developer, WordPress Developer, Web UI/UX Designer"></span></p>
                   
             </div>
         </header>
@@ -98,14 +112,14 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/grace.png" alt="" />
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Portfolio Item 4-->
                     <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
@@ -140,7 +154,7 @@
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -152,73 +166,145 @@
                     <div class="col-lg-4 ml-auto"><p class="lead">I'm a (BSIT) Bachelor of Science in Information Technology fresh graduate, seeking an entry-level position with a focus on software development. I can provide you WordPress websites and themes, as well as dynamic websites or static landing pages.</p></div>
                     <div class="col-lg-4 mr-auto"><p class="lead">I would love to help you if you need some changes made to your current website. I respond quickly as possible to all messages, as a good communicator and a reliable person to work with.</p></div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1XzWgdtIxTtf8kmlNBkqHiB8Ug6cU4Jl2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                   <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-l btn-outline-light" href="https://drive.google.com/file/d/1blH1OU2ZqdEIVREMWfu481y1VatyEpj0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <i class="fas fa-download mr-2"></i>
                         CV/Resume
                         
                     </a>
                 </div>
             </div>
+                <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+        <div class="section-title">
+          <h2 class="text-alignment text-uppercase text-white">Skills</h2>
+        </div>
+  
+        <div class="row skills-content">
+  
+          <div class="col-lg-6">
+  
+            <div class="progress">
+              <span class="skill">HTML5 <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill">CSS3/BootStrap <i class="val">88%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+                <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+  
+          </div>
+  
+          <div class="col-lg-6">
+            
+            <div class="progress">
+                <span class="skill">JavaScript/JQuery<i class="val">65%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            
+  
+            <div class="progress">
+              <span class="skill">Canva <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div><!-- End Skills -->
+  
+             
         </section>
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><i class="fas fa-phone-alt"></i>Hire Me</h2>
-             <!-- Load Facebook SDK for JavaScript -->
-    
-                
-                
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Services</h2>                
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">+639562981212</div>
+                    <div class="divider-custom-icon"><i class="fas fa-cogs"></i></div>
                     <div class="divider-custom-line"></div>
                  </div>
-
-                <!-- <div class="divider-custom ">
-                    <div class="divider-custom-icon"><i class="fab fa-skype"></i> live:.cid.ef884f4cca67dc50</div>
-                    <div class="divider-custom-icon"><i class="fab fa-google-plus"></i> sanielalec@gmail.com</div>
-                </div> -->
-                <!-- Contact Section Form-->
-                <!-- <div class="row">
-                    <div class="col-lg-8 mx-auto"> -->
-                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                               
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email Address</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <br />
-                            <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                        </form>
+                <!-- ======= Services Section ======= -->
+                <section id="services" class="services-mf pt-5 route">
+                    <div class="container">
+                    <div class="row">
+                        
                     </div>
-                </div> -->
+                    <div class="row">
+                        <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                            <span class="ico-circle"><i class="bi bi-menu-app"></i></span>
+                            </div>
+                            <div class="service-content">
+                            <h2 class="s-title">UI/UX Design</h2>
+                            <p class="s-description text-center">
+                                Provide me your idea and i will make
+                                it possible with all the web design compatibility and responsive design
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                            <span class="ico-circle"><i class="bi bi-display"></i></span>
+                            </div>
+                            <div class="service-content">
+                            <h2 class="s-title">Web Development</h2>
+                            <p class="s-description text-center">
+                                Create stunning sites built for growing your company visibility, and encouraging engagement.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                            <span class="ico-circle"><i class="bi bi-tools"></i></span>
+                            </div>
+                            <div class="service-content">
+                            <h2 class="s-title">Technical Support & Maintainance</h2>
+                            <p class="s-description text-center">
+                                Already got a nice website? Want someone to take care of it? 
+                                Let me help you with that, Feel free to Contact me.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </section><!-- End Services Section -->
             </div>
         </section>
         <!-- Footer-->
@@ -229,9 +315,7 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4"></h4>
                         <p class="lead mb-0">
-                            
-                            
-                            
+                       
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
@@ -245,19 +329,18 @@
                    
                     <!-- Footer About Text-->
                     <!-- <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Phone Number</h4>
+                        <h4 class="text-uppercase mb-4"></h4>
                         <p class="lead mb-0">
-                            09562981212 -->
-                            <!-- <a href="#">Hire me</a> -->
+                            <a href="#"></a>
                             
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright © jalkk | All Rights Reserved 2021</small></div>
+            <div class="container"><small>Copyright © 2021 alcsaniel | All Rights Reserved </small></div>
         </div>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
         <div class="scroll-to-top d-lg-none position-fixed">
@@ -286,7 +369,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="zz" />        
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">D'HIGHRATED (DHR) is an local esports organization located in Davao City. They want to apply or to be part of a big organizations someday.<a href="http://http://dhighrated.unaux.com" target="_blank" rel="noopener noreferrer" > Click here to check the website</a></p>
+                                    <p class="mb-5">D'HIGHRATED (DHR) is an local esports organization located in Davao City. They want to apply or to be part of a big organizations someday.</p>
+                                    <p class="mb-3"><a href="http://http://dhighrated.unaux.com" target="_blank" rel="noopener noreferrer" > Click here to check the website</a></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -320,7 +404,8 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/news2.PNG" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">INDANGANEWS is a website proposal for our barangay. It is a blog/news website that features happening inside our barangay.<a  href="http://mindahelps.ezyro.com/"  target="_blank" rel="noopener noreferrer" > Click here to check the website </a></p>
+                                    <p class="mb-5">INDANGANEWS is a website proposal for our barangay. It is a blog/news website that features happening inside our barangay.</p>
+                                    <p class="mb-3"><a  href="http://mindahelps.ezyro.com/"  target="_blank" rel="noopener noreferrer" > Click here to check the website </a></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -344,7 +429,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Gracelyn's Garden</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -352,9 +437,10 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/grace1.PNG" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-5">Bulak ni Grace, is a Ecommerce site for her Plants Shop.</p>
+                                    <p class="mb-3"><a  href="http://bulaknigrace.unaux.com/"  target="_blank" rel="noopener noreferrer" > Click here to check the website </a></p>
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
@@ -454,7 +540,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="" alt="" />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-dismiss="modal">
@@ -468,21 +554,7 @@
                 </div>
             </div>
         </div>
-        <!-- Disable F12, right click -->
-        <script>
-            window.oncontextmenu = function () {
-				return false;
-			}
-                document.onkeydown = function (event) {
-                    event = (event || window.event);
-                    if (event.keyCode == 123) {
-                        //alert('No F-keys');
-                        return false;
-                    }
-                }
-        </script>	
-
-   <!-- Load Facebook SDK for JavaScript -->
+       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
@@ -498,13 +570,16 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
 
       <!-- Your Chat Plugin code -->
       <div class="fb-customerchat"
         attribution="setup_tool"
         page_id="107905784703830"
-        theme_color="#2c3e50">
+        theme_color="#616161"
+        logged_in_greeting="Hi! How can I help you?"
+        logged_out_greeting="Hi! How can I help you?">
       </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -514,8 +589,9 @@
         <!-- Contact form JS-->
         <script src="assets/mail/jqBootstrapValidation.js"></script>
         <script src="assets/mail/contact_me.js"></script>
-        <!-- typed animation -->
+        <!-- vendor animations -->
         <script src="assets/vendor/typed.js/typed.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         
