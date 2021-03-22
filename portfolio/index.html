@@ -21,19 +21,7 @@
         <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Disable F12, right click -->
-        <script>
-            window.oncontextmenu = function () {
-				return false;
-			}
-                document.onkeydown = function (event) {
-                    event = (event || window.event);
-                    if (event.keyCode == 123) {
-                        //alert('No F-keys');
-                        return false;
-                    }
-                }
-        </script>	
+       
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -581,6 +569,19 @@
         logged_in_greeting="Hi! How can I help you?"
         logged_out_greeting="Hi! How can I help you?">
       </div>
+       <!-- Disable F12, right click -->
+       <script>
+        window.oncontextmenu = function () {
+            return false;
+        }
+            document.onkeydown = function (event) {
+                event = (event || window.event);
+                if (event.keyCode == 123) {
+                    //alert('No F-keys');
+                    return false;
+                }
+            }
+    </script>	
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
