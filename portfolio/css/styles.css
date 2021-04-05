@@ -10542,7 +10542,7 @@ a.text-dark:focus {
 }
 .masthead .masthead-avatar {
   width: 15rem;
-  opacity: 80%;
+  opacity: 90%;
 }
 
 @media (min-width: 992px) {
@@ -10559,8 +10559,8 @@ a.text-dark:focus {
     font-size: 3rem;
   }
   .masthead .masthead-subheading span {
-    font-size: 3.9rem;
-    margin-bottom: 3.9%;
+    font-size: 3.5rem;
+    margin-bottom: 2%;
   }
   .portfolio .portfolio-item {
     cursor: pointer;
